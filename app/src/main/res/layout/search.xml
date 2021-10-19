@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/buy_ticket_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Купить билет на автобус"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:id="@+id/start_point_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пункт отправления"
+            android:gravity="start"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <Spinner
+            android:id="@+id/start_point_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/citiesNames" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/end_point_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пункт прибытия"
+            android:gravity="start"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <Spinner
+            android:id="@+id/end_point_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/citiesNames" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Дата выезда" />
+
+        <DatePicker
+            android:id="@+id/first_date_picker"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="150dp"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Дата прибытия" />
+
+        <DatePicker
+            android:id="@+id/second_date_picker"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="150dp"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:text="Найти" />
+
+    </LinearLayout>
+</ScrollView>

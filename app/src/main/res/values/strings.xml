@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BusStation</string>
+
+    <string-array name="citiesNames">
+        <item>Иваново</item>
+        <item>Москва</item>
+        <item>Санкт-Петербург</item>
+        <item>Ярославль</item>
+    </string-array>
+
+
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
