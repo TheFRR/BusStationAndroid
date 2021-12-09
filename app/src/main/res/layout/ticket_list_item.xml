@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/first_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:foregroundGravity="center_horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -9,6 +12,7 @@
         android:id="@+id/route"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:foregroundGravity="center_horizontal"
         android:orientation="vertical">
 
         <TextView
@@ -28,13 +32,13 @@
             android:id="@+id/cost_text"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
-            android:paddingHorizontal="10dp"
+            android:paddingHorizontal="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/black"
             android:textSize="16sp"
-            android:text="Стоимость "
+            android:text="Стоимость"
             android:textAlignment="center"
             app:layout_constraintTop_toBottomOf="@+id/route"/>
 
@@ -43,7 +47,6 @@
             android:layout_height="1dp"
             android:layout_marginVertical="5dp"
             android:background="@android:color/darker_gray" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -51,6 +54,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/route"
+        app:layout_constraintLeft_toLeftOf="@+id/route"
+        app:layout_constraintRight_toRightOf="@+id/route"
         android:orientation="horizontal"
         android:gravity="center_horizontal"
         android:layout_marginHorizontal="5dp"
@@ -60,12 +65,12 @@
             android:id="@+id/start_time_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:paddingStart="5dp"
-            android:paddingEnd="5dp"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="5dp"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:text="08:00"/>
+
 
         <TextView
             android:id="@+id/total_time_text"
@@ -79,9 +84,8 @@
             android:id="@+id/end_time_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="5dp"
-            android:paddingEnd="5dp"
-            android:layout_marginEnd="15dp"
+            android:paddingLeft="5dp"
+            android:layout_marginRight="15dp"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:text="14:30"/>
@@ -90,7 +94,7 @@
             android:id="@+id/add_to_basket"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
             android:text="В корзину" />
 
     </LinearLayout>
