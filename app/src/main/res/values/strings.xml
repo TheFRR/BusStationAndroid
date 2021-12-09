@@ -1,13 +1,24 @@
 <resources>
     <string name="app_name">BusStation</string>
 
-    <string-array name="citiesNames">
+    <string-array name="startCitiesNames">
         <item>Иваново</item>
+    </string-array>
+
+    <string-array name="endCitiesNames">
         <item>Москва</item>
         <item>Санкт-Петербург</item>
         <item>Ярославль</item>
+        <item>Владимир</item>
+        <item>Приволжск</item>
+        <item>Вичуга</item>
     </string-array>
 
+    <string-array name="typesOfPayment">
+        <item>WebMoney</item>
+        <item>QIWI</item>
+        <item>Яндекс.Деньги</item>
+    </string-array>
 
     <string name="title_activity_bottom_navigation">BottomNavigation</string>
     <string name="title_home">Home</string>

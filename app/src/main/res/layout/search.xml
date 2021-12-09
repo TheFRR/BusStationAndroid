@@ -36,7 +36,7 @@
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
             android:layout_marginBottom="10dp"
-            android:entries="@array/citiesNames" />
+            android:entries="@array/startCitiesNames" />
 
         <View
             android:layout_width="match_parent"
@@ -61,7 +61,7 @@
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
             android:layout_marginBottom="10dp"
-            android:entries="@array/citiesNames" />
+            android:entries="@array/endCitiesNames" />
 
         <View
             android:layout_width="match_parent"
@@ -76,15 +76,14 @@
             android:gravity="center"
             android:textColor="@color/black"
             android:textSize="16sp"
-            android:text="Дата выезда" />
+            android:text="Время выезда (+/- 1 час)" />
 
-        <DatePicker
-            android:id="@+id/first_date_picker"
+        <TimePicker
+            android:id="@+id/first_time_picker"
             android:layout_width="match_parent"
             android:gravity="center"
             android:layout_height="150dp"
-            android:datePickerMode="spinner"
-            android:calendarViewShown="false" />
+            android:timePickerMode="spinner" />
 
         <View
             android:layout_width="match_parent"
@@ -99,22 +98,14 @@
             android:paddingTop="5dp"
             android:textColor="@color/black"
             android:textSize="16sp"
-            android:text="Дата прибытия" />
+            android:text="Время прибытия (+/- 1 час)" />
 
-        <DatePicker
-            android:id="@+id/second_date_picker"
+        <TimePicker
+            android:id="@+id/second_time_picker"
             android:layout_width="match_parent"
             android:gravity="center"
             android:layout_height="150dp"
-            android:datePickerMode="spinner"
-            android:calendarViewShown="false" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_gravity="center"
-            android:text="Найти" />
+            android:timePickerMode="spinner" />
 
     </LinearLayout>
 </ScrollView>

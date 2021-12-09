@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/route"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/start_point_text_basket"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Иваново - Москва (вокзал №1)"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/first_border"/>
+
+        <TextView
+            android:id="@+id/date_basket"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Дата"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/route"/>
+
+        <TextView
+            android:id="@+id/cost_text_basket"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Стоимость"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/route"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/purple_500" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
